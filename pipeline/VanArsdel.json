@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "VanMovieActor",
+				"name": "Van",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
