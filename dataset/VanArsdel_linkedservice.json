@@ -56,7 +56,7 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "Hidden",
+			"schema": "dbo",
 			"table": "Transactions"
 		}
 	},
