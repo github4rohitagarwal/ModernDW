@@ -9,21 +9,55 @@
 		"type": "SqlServerTable",
 		"schema": [
 			{
-				"name": "ActorID",
+				"name": "TransactionID",
 				"type": "uniqueidentifier"
 			},
 			{
-				"name": "ActorName",
-				"type": "varchar"
+				"name": "CustomerID",
+				"type": "uniqueidentifier"
 			},
 			{
-				"name": "Gender",
-				"type": "char"
+				"name": "MovieID",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "RentalDate",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ReturnDate",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RentalCost",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "LateFee",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
+			},
+			{
+				"name": "RewindFlag",
+				"type": "bit"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "date"
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "date"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "MovieActors"
+			"table": "Transactions"
 		}
 	},
 	"type": "Microsoft.Synapse/workspaces/datasets"

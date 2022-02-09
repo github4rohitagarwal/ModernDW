@@ -1,5 +1,5 @@
 {
-	"name": "Vanmovieactor",
+	"name": "transaction",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "southridgesynapse-WorkspaceDefaultStorage",
