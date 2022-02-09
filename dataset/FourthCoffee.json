@@ -1,0 +1,17 @@
+{
+	"name": "FourthCoffee",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Link_Service_FourthCoffee",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

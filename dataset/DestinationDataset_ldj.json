@@ -1,0 +1,23 @@
+{
+	"name": "DestinationDataset_ldj",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "southridgesynapse-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Vafa/Movies",
+				"fileSystem": "southridgefilesytem"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

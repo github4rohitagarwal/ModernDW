@@ -1,0 +1,17 @@
+{
+	"name": "VafaCofee01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Fourthcoffe_fileserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

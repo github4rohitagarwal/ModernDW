@@ -1,0 +1,19 @@
+{
+	"name": "VafaCofee003",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "southridgesynapse-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Vafa/Coffee",
+				"fileSystem": "southridgefilesytem"
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

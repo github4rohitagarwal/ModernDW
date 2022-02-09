@@ -1,0 +1,28 @@
+{
+	"name": "Dataflow2",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "CosmosMoviesRA",
+						"type": "DatasetReference"
+					},
+					"name": "Movies"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "Moviesextract",
+						"type": "DatasetReference"
+					},
+					"name": "MoviesExtract"
+				}
+			],
+			"transformations": [],
+			"script": "source(output(\n\t\tactors as (name as string)[],\n\t\tavailabilityDate as string,\n\t\tgenre as string,\n\t\trating as string,\n\t\treleaseYear as integer,\n\t\truntime as integer,\n\t\tstreamingAvailabilityDate as string,\n\t\ttier as integer,\n\t\ttitle as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'document') ~> Movies\nMovies sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tumask: 0022,\n\tpreCommands: [],\n\tpostCommands: [],\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> MoviesExtract"
+		}
+	}
+}

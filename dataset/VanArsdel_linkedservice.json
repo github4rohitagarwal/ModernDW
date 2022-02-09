@@ -1,0 +1,30 @@
+{
+	"name": "VanArsdel_linkedservice",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "VanArsdel_linkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ActorID",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ActorName",
+				"type": "varchar"
+			},
+			{
+				"name": "Gender",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MovieActors"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

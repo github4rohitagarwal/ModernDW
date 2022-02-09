@@ -1,0 +1,20 @@
+{
+	"name": "Moviesextract",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "southridgesynapse-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Rohit/Movies",
+				"fileSystem": "southridgefilesytem"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

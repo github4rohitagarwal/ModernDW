@@ -1,0 +1,42 @@
+{
+	"name": "Customers",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase_RA",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustomerID",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			},
+			{
+				"name": "PhoneNumber",
+				"type": "char"
+			},
+			{
+				"name": "CreatedDate",
+				"type": "date"
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "date"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Customers"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

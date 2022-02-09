@@ -1,0 +1,20 @@
+{
+	"name": "DestinationDataset_bf4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "southridgesynapse-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Vafa/Movies",
+				"fileSystem": "southridgefilesytem"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

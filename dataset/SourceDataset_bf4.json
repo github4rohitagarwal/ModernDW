@@ -1,0 +1,16 @@
+{
+	"name": "SourceDataset_bf4",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "VafaCosmosDb1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {},
+		"typeProperties": {
+			"collectionName": "movies"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
